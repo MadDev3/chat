@@ -1,20 +1,11 @@
 function func(s, a, b) {
-    if (s.match(/^$/)) {
-        return -1;
+    let aIndex = s.lastIndexOf(a)
+    if(aIndex === 0) {
+        aIndex = -1;
     }
-    let aIndex = -1;
-    let bIndex = -1;
-
-    for(let i = s.length - 1; i > 0; i--) {
-        if(s[i] === a) {
-            aIndex = i;
-            break;
-        }
-        if(s[i] === b) {
-            bIndex  = i;
-            break;
-        }
+    let bIndex = s.lastIndexOf(b)
+    if(bIndex === 0) {
+        bIndex = -1;
     }
-
     return Math.max(aIndex, bIndex);
 }

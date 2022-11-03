@@ -1,0 +1,15 @@
+.message {
+    border-radius: 10px;
+    border: 1px solid rgb(182, 182, 182);
+    background-color: aliceblue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.right {
+    text-align: right;
+}
+
+.author{
+    font-weight: bold;
+}
